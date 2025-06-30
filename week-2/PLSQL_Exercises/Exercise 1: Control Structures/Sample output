@@ -1,0 +1,16 @@
+--Scenario1:
+--output:
+PL/SQL procedure successfully completed.
+
+
+--Scenario2:
+--output:
+PL/SQL procedure successfully completed.
+
+
+--Scenario3:
+--output:
+Reminder: Loan ID 101 for customer Alice is due on 2025-07-19
+Reminder: Loan ID 103 for customer Charlie is due on 2025-07-09
+Reminder: Loan ID 104 for customer Diana is due on 2025-07-04
+PL/SQL procedure successfully completed.
