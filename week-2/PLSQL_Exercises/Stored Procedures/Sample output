@@ -1,0 +1,21 @@
+--Scenario1
+EXECUTE ProcessMonthlyInterest;
+--output:
+PL/SQL procedure successfully completed.
+
+
+--Scenario2
+EXECUTE UpdateEmployeeBonus(10, 10);
+--output:
+PL/SQL procedure successfully completed.
+
+
+--Scenario3
+EXECUTE TransferFunds(401, 402, 2000);
+--output1:
+PL/SQL procedure successfully completed.
+--output2:(if insufficient balance)
+ORA-20001: Insufficient balance in source account.
+ORA-06512: at "TRANSFERFUNDS", line X
+
+
