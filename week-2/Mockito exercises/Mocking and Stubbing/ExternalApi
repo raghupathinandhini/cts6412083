@@ -1,0 +1,7 @@
+package com.google.MavenProjects;
+
+public interface ExternalApi {
+	
+	    String getData();
+	
+}
