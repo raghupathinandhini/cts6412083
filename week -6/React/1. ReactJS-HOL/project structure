@@ -1,0 +1,12 @@
+myfirstreact/
+├── node_modules/       
+├── public/
+│   └── index.html        
+├── src/
+│   ├── App.js            
+│   ├── index.js         
+│   └── App.css          
+├── package.json         
+├── package-lock.json     
+├── .gitignore            
+├── README.md             
