@@ -1,0 +1,37 @@
+3..container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  color: brown;
+}
+
+.label.name {
+  color: blue;
+}
+.value.name {
+  color: skyblue;
+}
+
+.label.school {
+  color: red;
+}
+.value.school {
+  color: crimson;
+}
+
+.label.total {
+  color: purple;
+}
+.value.total {
+  color: purple;
+}
+
+.label.score {
+  color: green;
+}
+.value.score {
+  color: green;
+}
