@@ -1,0 +1,5 @@
+[
+  { "userId": 1, "id": 1, "title": "Hello React", "body": "My first local post." },
+  { "userId": 1, "id": 2, "title": "Lifecycle", "body": "Testing componentDidMount." },
+  { "userId": 2, "id": 3, "title": "Fallback", "body": "This works without internet." }
+]
