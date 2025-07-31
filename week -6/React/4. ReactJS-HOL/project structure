@@ -1,0 +1,11 @@
+blogapp/
+├── public/
+│   └── posts.json
+├── src/
+│   ├── components/
+│   │   └── Posts.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+└── package.json
