@@ -1,0 +1,17 @@
+import React from 'react';
+
+function EvenPlayers({ players }) {
+  const even = players.filter((_, index) => index % 2 === 0);
+
+  return (
+    <div>
+      <ul>
+        {even.map((player, index) => (
+          <li key={index}>{player}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default EvenPlayers;
