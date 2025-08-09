@@ -1,0 +1,17 @@
+## created a .log file and log/ directory
+  echo "This is a log file" > debug.log
+  mkdir log
+  echo "Some logs here" > log/log1.txt
+
+## created .gitignore
+  touch .gitignore
+  echo "*.log" >> .gitignore
+  echo "log/" >> .gitignore
+
+## check the git status
+  git status
+
+## commit and push 
+  git add .gitignore
+  git commit -m "Added .gitignore to ignore .log files and log folder"
+  git push
