@@ -1,0 +1,75 @@
+## create the new branch
+    git branch GitNewBranch
+
+## list all local and remote branches
+    git branch -a 
+  Expected output:
+     main
+     GitNewBranch
+     remotes/origin/main
+
+## switch to new branch 
+     git checkout GitNewBranch
+
+## add new files and commit changes
+     git add newfile.txt
+     git commit -m "Added newfile.txt to GitNewBranch"
+    Expected output:
+       [GitNewBranch <commit_hash>] Added newfile.txt to GitNewBranch
+       1 file changed, 1 insertion(+)
+       create mode 100644 newfile.txt
+
+## check branch status
+     git status
+    Expected output:
+       On branch GitNewBranch
+       nothing to commit, working tree clean
+
+## switch back to main
+      git checkout main
+
+## merge new branch into main
+      git merge GitNewBranch
+     Expected output:
+        Updating <old_commit_hash>..<new_commit_hash>
+        Fast-forward
+        newfile.txt | 1 +
+        1 file changed, 1 insertion(+)
+        create mode 100644 newfile.txt
+
+## delete the feature branch 
+      git branch -d GitNewBranch
+
+## check branch status 
+      git status
+     Expected output:
+        On branch main
+        Your branch is ahead of 'origin/main' by 1 commit.
+        (use "git push" to publish your local commits)
+        nothing to commit, working tree clean
+
+## list
+      git branch -a
+     Expected output:
+        main
+        remotes/origin/main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
