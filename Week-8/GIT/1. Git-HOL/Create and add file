@@ -1,0 +1,38 @@
+
+## create a new project folder
+
+  mkdir GitDemo
+  cd GitDemo
+
+## initiallize GIT repository
+
+  git init
+
+## verify repository initialized
+
+  ls -a
+
+## create a new file and add content 
+
+  echo "Welcome to Git Demo" > welcome.txt
+
+## check the file exists
+
+  ls
+
+## view the file content
+
+  cat welcome.txt
+
+## check the git status
+
+  git status
+
+## add the file to staging area
+
+  git add welcome.txt
+
+## commit the file with message
+
+git commit
+
