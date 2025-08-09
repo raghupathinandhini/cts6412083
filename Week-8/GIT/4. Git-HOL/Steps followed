@@ -1,0 +1,85 @@
+## 1. Verify main is in a clean state:
+
+  git checkout main
+  git status
+Expected output : “working tree clean”
+
+## 2. Create a branch:
+
+  git checkout -b GitWork
+
+## 3. Create and edit hello.xml:
+
+  echo "<message>Hello from GitWork branch</message>" > hello.xml
+  cat hello.xml
+## 4. Commit changes in GitWork branch:
+
+  git add hello.xml
+  git commit -m "Added hello.xml in GitWork branch"
+
+## 5. Switch to main:
+
+  git checkout main
+
+## 6. Create another hello.xml with different content:
+
+  echo "<message>Hello from main branch</message>" > hello.xml
+  cat hello.xml
+## 7. Commit changes to main:
+
+  git add hello.xml
+  git commit -m "Added hello.xml in main branch"
+
+## 8. Observe the log (history):
+
+  git log --oneline --graph --decorate --all
+
+## 9. Check differences:
+
+  git diff GitWork
+
+## 10. Merge the branch to main:
+
+  git merge GitWork
+Expected output: You will now get a merge conflict in hello.xml.
+
+## 11. Observe Git markup:
+Open hello.xml 
+
+<<<<<<< HEAD
+<message>Hello from main branch</message>
+=======
+<message>Hello from GitWork branch</message>
+>>>>>>> GitWork
+
+## 12.In notepad
+
+  <message>Hello from both branches</message>
+Then:
+  git add hello.xml
+
+## 13. Commit resolved changes:
+
+   git commit -m "Resolved conflict in hello.xml and merged GitWork into main"
+
+## 14. Check status and ignore backup files:
+
+   git status
+   echo "*.orig" >> .gitignore
+
+## 15. Commit the updated .gitignore:
+
+   git add .gitignore
+   git commit -m "Ignored backup files (*.orig)"
+
+## 16. List all branches:
+
+   git branch -a
+
+## 17. Delete the merged branch:
+
+   git branch -d GitWork
+
+## 18. View final log with graph:
+
+   git log --oneline --graph --decorate
